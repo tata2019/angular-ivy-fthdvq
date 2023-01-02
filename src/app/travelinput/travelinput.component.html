@@ -1,0 +1,14 @@
+<div class="container">
+  <header> 
+    <h1> {{title}}</h1> 
+  </header>
+<p>Passport: <input type="text" /> <br /></p>
+
+<p>Destination: <input type="text" /></p>
+<app-button
+  text="Submit"
+  color="green"
+  (btnClick)="getTravelDetail()"
+></app-button>
+<app-button text="Clear" color="Brown" (btnClick)="getClear()"></app-button>
+</div>
