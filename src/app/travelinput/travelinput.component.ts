@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {COUNTRIES} from '../mock-country';
+import {Country} from '../Country';
 
 @Component({
   selector: 'app-travelinput',
@@ -7,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TravelinputComponent implements OnInit {
   title : string = 'Easy Travel';
+  countries: Country[] = COUNTRIES;
+
+  
   constructor() {}
 
   ngOnInit() {}

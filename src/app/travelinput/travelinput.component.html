@@ -11,4 +11,6 @@
   (btnClick)="getTravelDetail()"
 ></app-button>
 <app-button text="Clear" color="Brown" (btnClick)="getClear()"></app-button>
+
+<p *ngFor="let country of countries"> {{country.code}} : {{country.name}}</p>
 </div>
